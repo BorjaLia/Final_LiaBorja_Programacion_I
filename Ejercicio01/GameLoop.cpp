@@ -32,10 +32,16 @@ int GameLoop()
 				goToCoordinates(getScreenWidth() / 2, getScreenHeight() / 2);
 				std::cout << "Ship game!";
 				goToCoordinates(getScreenWidth() / 2, (getScreenHeight() / 2) + 1);
-				std::cout << "1. Play";
+				std::cout << " 1. Play";
 				goToCoordinates(getScreenWidth() / 2, (getScreenHeight() / 2) + 2);
-				std::cout << "2. Exit";
+				std::cout << " 2. Exit";
 				goToCoordinates((getScreenWidth() / 2)-4, (getScreenHeight() - 4));
+				setForegroundColor(Color::GRAY);
+				std::cout << "  Arrows to move";
+				goToCoordinates((getScreenWidth() / 2)-4, (getScreenHeight() - 3));
+				std::cout << "  Right to shoot";
+				setForegroundColor(Color::WHITE);
+				goToCoordinates((getScreenWidth() / 2)-4, (getScreenHeight() - 1));
 				setForegroundColor(Color::GRAY);
 				std::cout << "Made by Borja Lia";
 				setForegroundColor(Color::WHITE);

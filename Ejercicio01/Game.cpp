@@ -170,7 +170,7 @@ void Game::draw(bool isRunning)
 		entities[i]->draw();
 	}
 	Ship* ship = static_cast<Ship*>(entities[0]);
-	Hud->DrawHUD();
+	Hud->DrawHUD(winScore);
 
 	if (!isRunning)
 	{

@@ -8,7 +8,7 @@ public:
 	HUD(Ship* ship,mth::Vector2 pos);
 	~HUD();
 
-	void DrawHUD();
+	void DrawHUD(int maxScore);
 
 	void DrawVictory();
 	void DrawDefeat();

@@ -12,7 +12,7 @@ HUD::~HUD()
 {
 }
 
-void HUD::DrawHUD()
+void HUD::DrawHUD(int maxScore)
 {
 	goToCoordinates(pos.x, pos.y);
 	std::cout << "Asteroids: " << asteroidAmount;
@@ -30,7 +30,7 @@ void HUD::DrawHUD()
 		}
 	}
 	goToCoordinates(pos.x, pos.y + 2);
-	std::cout << "Score: " << ship->getScore();
+	std::cout << "Score: " << ship->getScore() << " / " << maxScore;
 }
 
 void HUD::DrawVictory()
